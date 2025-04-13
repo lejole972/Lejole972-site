@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association - lejole972</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #8e44ad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #732d91;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background: #5e2c7d;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #8e44ad;
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        form button {
+            background: #8e44ad;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        footer {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Association "lejole972"</h1>
+        <p>Ensemble, agissons contre les violences faites aux femmes</p>
+    </header>
+    <nav>
+        <a href="#adhesion"><i class="fas fa-user-plus"></i> Adhésion</a>
+        <a href="#don"><i class="fas fa-hand-holding-heart"></i> Dons</a>
+        <a href="#temoignages"><i class="fas fa-comment-alt"></i> Témoignages</a>
+        <a href="#partenaires"><i class="fas fa-handshake"></i> Partenaires</a>
+        <a href="#evenements"><i class="fas fa-calendar-alt"></i> Événements</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <section id="adhesion">
+        <h2>Formulaire d'adhésion</h2>
+        <form>
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Adresse e-mail" required>
+            <input type="text" placeholder="Ville">
+            <button type="submit">Rejoindre l'association</button>
+        </form>
+    </section>
+
+    <section id="don">
+        <h2>Faire un don</h2>
+        <form>
+            <input type="text" placeholder="Nom complet" required>
+            <input type="number" placeholder="Montant (€)" required>
+            <button type="submit">Faire un don</button>
+        </form>
+    </section>
+
+    <section id="temoignages">
+        <h2>Témoignages</h2>
+        <div class="grid">
+            <div><strong>Anne</strong><p>"Grâce à cette association, j'ai retrouvé confiance."</p></div>
+            <div><strong>Sonia</strong><p>"Une écoute bienveillante et un vrai soutien."</p></div>
+            <div><strong>Lina</strong><p>"Je me sens enfin en sécurité et accompagnée."</p></div>
+        </div>
+    </section>
+
+    <section id="partenaires">
+        <h2>Nos partenaires</h2>
+        <div class="grid">
+            <div><i class="fas fa-university"></i> Fondation ABC</div>
+            <div><i class="fas fa-clinic-medical"></i> Centre de santé Solidaire</div>
+            <div><i class="fas fa-briefcase"></i> Entreprise ENGAGÉE</div>
+        </div>
+    </section>
+
+    <section id="evenements">
+        <h2>Événements à venir</h2>
+        <ul>
+            <li>8 mars : Journée internationale des droits des femmes - Conférences et stands</li>
+            <li>15 avril : Atelier d’auto-défense à Paris</li>
+            <li>2 mai : Rencontre des adhérents et bénévoles</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Votre nom">
+            <input type="email" placeholder="Votre email">
+            <textarea rows="4" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Association lejole972. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
